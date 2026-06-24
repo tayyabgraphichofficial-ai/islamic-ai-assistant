@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-urdu: "Noto Nastaliq Urdu", "Amiri", serif;
+  --font-arabic: "Amiri", serif;
+  
+  /* Modern islamic digital theme palette: deep emerald and refined gold/amber */
+  --color-emerald-950: #022c22;
+  --color-islamic-green-50: #f0fdf4;
+  --color-islamic-green-100: #dcfce7;
+  --color-islamic-green-600: #059669;
+  --color-islamic-green-700: #047857;
+  --color-islamic-green-800: #065f46;
+  --color-islamic-green-900: #064e3b;
+  
+  --color-islamic-gold-50: #fffbeb;
+  --color-islamic-gold-100: #fef3c7;
+  --color-islamic-gold-500: #f59e0b;
+  --color-islamic-gold-600: #d97706;
+  --color-islamic-gold-700: #b45309;
+}
+
+@layer utilities {
+  .urdu-text {
+    font-family: var(--font-urdu);
+    line-height: 2.2;
+    direction: rtl;
+  }
+  .arabic-text {
+    font-family: var(--font-arabic);
+    line-height: 1.8;
+    direction: rtl;
+  }
+}
+
+/* Base style adjustments */
+html, body {
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+

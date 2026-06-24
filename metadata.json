@@ -1,0 +1,6 @@
+{
+  "name": "Islamic AI",
+  "description": "An Islamic AI assistant answering questions in Urdu using authentic Islamic books and resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
